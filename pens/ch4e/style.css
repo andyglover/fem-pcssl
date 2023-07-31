@@ -134,7 +134,7 @@
     font-size: var(--h3);
   }
   #top h1 a:hover {
-    color: var(--lime);
+    color: var(--magenta);
   }
   #top {
     display: flex;
@@ -143,7 +143,9 @@
     max-width: 1200px;
     margin: 4rem 2rem;
   }
-
+  .bandname {
+    padding-left: 1rem;
+  }
   #top nav {
     font-family: var(--cursive);
   }
@@ -178,8 +180,8 @@
   #top > nav a:hover,
   #fauxBody > footer a:focus,
   #fauxBody > footer a:hover {
-    color: var(--lime);
-    transform: scale(1.2);
+    color: var(--cyan);
+    /* transform: scale(1.2); */
   }
 
   @media (max-width: 48rem) {
