@@ -125,6 +125,9 @@
   }
 }
 @layer header {
+  #top h1 {
+    margin: 0;
+  }
   #top h1 a {
     font-family: var(--cursive);
     color: var(--white);
@@ -135,11 +138,17 @@
   }
   #top {
     display: flex;
-    gap: 1.5rem;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 4rem 2rem;
   }
 
-  #top > nav {
-    flex-grow: 0;
+  #top nav {
+    font-family: var(--cursive);
+  }
+  #top nav a {
+    color: var(--white);
   }
 
   #top > nav li {
@@ -156,7 +165,7 @@
   #fauxBody > footer a {
     display: inline-block;
     text-decoration: none;
-    color: #048;
+    /* color: #048; */
     transition: transform 0.3s, color 0.3s, box-shadow 0.3s;
   }
 
@@ -169,7 +178,7 @@
   #top > nav a:hover,
   #fauxBody > footer a:focus,
   #fauxBody > footer a:hover {
-    color: #000;
+    color: var(--lime);
     transform: scale(1.2);
   }
 
