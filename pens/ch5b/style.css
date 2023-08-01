@@ -198,6 +198,40 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    position: relative;
+  }
+  .album::before,
+  .album::after,
+  .album > :first-child::before,
+  .album > :first-child::after {
+    /* display: block; */
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-color: var(--cyan);
+    border-style: solid;
+    margin: 0.25rem;
+  }
+  .album::before {
+    top: 0;
+    right: 0;
+    border-width: 2px 2px 0 0;
+  }
+  .album::after {
+    bottom: 0;
+    right: 0;
+    border-width: 0px 2px 2px 0;
+  }
+  .album > :first-child::before {
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 2px 2px;
+  }
+  .album > :first-child::after {
+    top: 0;
+    left: 0;
+    border-width: 2px 0 0 2px;
   }
   .album h1 {
     color: var(--lime);
