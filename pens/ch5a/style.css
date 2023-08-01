@@ -126,6 +126,29 @@
   .wrapper {
     margin: 0 auto;
   }
+  .button-primary {
+    color: var(--magenta);
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border: 2px solid var(--magenta);
+    border-radius: 10px;
+    text-align: center;
+    white-space: nowrap;
+    width: 170px;
+  }
+  .button-primary:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+  }
+  .button-fullwidth {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    margin: 2rem auto;
+  }
 }
 @layer reviews {
   .imggroup {
@@ -229,23 +252,6 @@
     margin: 0;
     font-size: var(--h6);
     font-family: var(--cursive);
-  }
-  .button-primary {
-    color: var(--magenta);
-    font-weight: 600;
-    text-transform: uppercase;
-    display: inline-block;
-    text-decoration: none;
-    padding: 1rem 1.5rem;
-    border: 2px solid var(--magenta);
-    border-radius: 10px;
-    text-align: center;
-    white-space: nowrap;
-    width: 170px;
-  }
-  .button-primary:hover {
-    border-color: var(--cyan);
-    color: var(--cyan);
   }
 }
 @layer footer {
