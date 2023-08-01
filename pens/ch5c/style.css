@@ -193,12 +193,12 @@
   .bandname {
     padding-left: 1rem;
   }
-
-  @media (max-width: 600px) {
+  @media (max-width: 500px) {
     .bandname {
       display: none;
     }
-
+  }
+  @media (max-width: 799px) {
     #mainMenuOpen {
       display: block;
       font-size: 2rem;
