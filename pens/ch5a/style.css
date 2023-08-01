@@ -241,6 +241,10 @@
   footer svg:hover {
     fill: var(--cyan);
   }
+  .bolt-lg {
+    width: 155px;
+    margin: 2rem auto;
+  }
 }
 @media (min-width: 800px) {
   .wrapper {
