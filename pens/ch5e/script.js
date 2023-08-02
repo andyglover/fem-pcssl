@@ -11,18 +11,18 @@ document.querySelector(".button-tracklist").addEventListener("click", () => {
 I am very sure you could somehow combine this functionality with the functionality above, but I am not enough of a JS person to do this!
  */
 
-/* const btn = document.getElementById('tracklist');
+const btn = document.getElementById("tracklist");
 
 // ✅ Toggle button text on click
-btn.addEventListener('click', function handleClick() {
-  const initialText = 'Tracklist';
+btn.addEventListener("click", function handleClick() {
+  const initialText = "Tracklist";
 
   if (btn.textContent.includes(initialText)) {
-    btn.textContent = 'Close \u2716';
+    btn.textContent = "Close \u2716";
   } else {
     btn.textContent = initialText;
   }
-}); */
+});
 
 /* NAVIGATION/HAMBURGER BUTTON */
 {
