@@ -649,6 +649,13 @@
       background-color: var(--lime);
       color: var(--black);
     }
+
+    .tracklist table {
+      margin: -4rem 1rem 0.5rem 1rem;
+    }
+    .tracklist table td:last-of-type {
+      padding-right: 2rem;
+    }
   }
 }
 @layer album {
