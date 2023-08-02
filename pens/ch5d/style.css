@@ -304,6 +304,13 @@
     grid-row: 3/4;
     grid-column: 1/2;
   }
+  @media (min-width: 800px) {
+    .icons ul {
+      display: flex;
+      gap: 1rem;
+      margin-top: -20px;
+    }
+  }
 }
 @layer audio {
   .cover {
