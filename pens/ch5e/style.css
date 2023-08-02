@@ -599,6 +599,12 @@
     font-weight: 600;
     text-align: right;
   }
+  .hidden {
+    display: none;
+  }
+  .showing {
+    display: table;
+  }
 }
 @layer album {
   .album {

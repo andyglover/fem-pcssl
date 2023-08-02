@@ -1,10 +1,10 @@
 /* h/t Erika Lee at Indiana University <3 */
 
-/* document.querySelector(".button-tracklist").addEventListener("click", () => {
+document.querySelector(".button-tracklist").addEventListener("click", () => {
   document.querySelectorAll(".hidden").forEach((item) => {
     item.classList.toggle("showing");
   });
-}); */
+});
 
 /* Copied and modified from https://bobbyhadz.com/blog/javascript-change-button-text-on-click
 
