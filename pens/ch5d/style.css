@@ -282,6 +282,14 @@
     padding: 0;
     margin: 0;
   }
+  .cover > * {
+    border: 1px solid white;
+  }
+  .cover {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
 }
 @layer audio {
   .cover {
