@@ -812,6 +812,37 @@
   .diamonds li:nth-child(even) {
     transform: rotate(-6deg);
   }
+  @media (min-width: 324px) {
+    .diamond-container {
+      --sq: 150px;
+      --sq-gap: 3px;
+      --max-width: 325px;
+    }
+    .diamonds li:nth-child(n) {
+      transform: rotate(0deg);
+    }
+    .diamonds li {
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 50%);
+    }
+    .diamonds {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      gap: var(--sq-gap);
+      padding-left: calc(0.5 * var(--sq));
+      padding-top: calc(0.5 * var(--sq));
+    }
+    .diamonds li {
+      margin-left: calc(-0.5 * var(--sq));
+      margin-bottom: 0;
+    }
+    .diamonds li:nth-child(3n + 2) {
+      margin-top: calc((-0.5 * var(--sq)) - (0.5 * var(--sq-gap)));
+    }
+    .diamonds li:nth-child(10) {
+      margin-top: calc((-0.5 * var(--sq)) - (0.5 * var(--sq-gap)));
+    }
+  }
 }
 @layer footer {
   footer {
