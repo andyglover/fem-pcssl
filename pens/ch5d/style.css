@@ -270,6 +270,19 @@
     }
   }
 }
+@layer icons {
+  .cover svg {
+    fill: var(--lime);
+  }
+  .cover svg:hover {
+    fill: var(--cyan);
+  }
+  .cover ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}
 @layer audio {
   .cover {
     max-width: 500px;
