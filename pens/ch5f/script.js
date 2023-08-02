@@ -174,6 +174,9 @@ document.querySelector("#tracklist").addEventListener("click", () => {
   document.querySelectorAll(".hidden").forEach((item) => {
     item.classList.toggle("showing");
   });
+  document.querySelectorAll(".button-tracklist").forEach((item) => {
+    item.classList.toggle("button-close");
+  });
 });
 
 /* Copied and modified from https://bobbyhadz.com/blog/javascript-change-button-text-on-click
