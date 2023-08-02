@@ -792,6 +792,26 @@
     background-image: url("https://assets.codepen.io/296057/fem-women.jpg");
     background-size: contain;
   }
+  .diamond-container {
+    --sq: 200px;
+    --sq-gap: 1rem;
+    --max-width: 325px;
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    border: 2px solid var(--cyan);
+  }
+  .diamonds li {
+    list-style: none;
+    width: var(--sq);
+    height: var(--sq);
+    margin-bottom: var(--sq-gap);
+  }
+  .diamonds li:nth-child(odd) {
+    transform: rotate(4deg);
+  }
+  .diamonds li:nth-child(even) {
+    transform: rotate(-6deg);
+  }
 }
 @layer footer {
   footer {
