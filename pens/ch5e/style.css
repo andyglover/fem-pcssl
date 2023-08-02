@@ -565,6 +565,17 @@
     font-size: var(--h5);
     padding: 1rem;
   }
+  #tracklist:hover {
+    color: var(--cyan);
+  }
+  .tracklist {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    border: 2px solid var(--magenta);
+  }
+  .tracklist:hover {
+    border-color: var(--cyan);
+  }
   table {
     border-collapse: collapse;
     max-width: 500px;
@@ -572,24 +583,21 @@
     margin: 0 auto;
     font-family: var(--cursive);
   }
-  caption {
+  caption,
+  th {
     visibility: collapse;
     /* the accessible way of hiding this but still visible to screen readers */
   }
-  th,
+
   td {
     padding: 1rem 0;
   }
-  th {
-    text-align: left;
-    font-family: var(--sans-serif);
-    color: var(--grey);
-    border-bottom: 1px solid var(--grey);
-  }
+
   td:last-of-type {
     font-family: var(--serif);
     color: var(--magenta);
     font-weight: 600;
+    text-align: right;
   }
 }
 @layer album {
