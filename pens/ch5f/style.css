@@ -602,6 +602,26 @@
     font-weight: 600;
     text-align: right;
   }
+  @media (min-width: 800px) {
+    .main-grid {
+      display: grid;
+      grid-template-columns: 100px 500px;
+      max-width: 600px;
+      gap: 0;
+      margin: 0 auto;
+    }
+    .cover {
+      order: 2;
+    }
+    .tracklist {
+      height: 500px;
+      justify-self: end;
+      padding: 0;
+      margin: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
 }
 @layer album {
   .album {
