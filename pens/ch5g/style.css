@@ -842,6 +842,20 @@
     .diamonds li:nth-child(10) {
       margin-top: calc((-0.5 * var(--sq)) - (0.5 * var(--sq-gap)));
     }
+    @media (min-width: 440px) {
+      .diamond-container {
+        --sq: 200px;
+        --sq-gap: 4px;
+        --max-width: 440px;
+      }
+    }
+    @media (min-width: 800px) {
+      .diamond-container {
+        --sq: 250px;
+        --sq-gap: 6px;
+        --max-width: 550px;
+      }
+    }
   }
 }
 @layer footer {
